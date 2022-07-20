@@ -67,7 +67,7 @@ def send_webhook(url, **kwargs):
 
 def make_embed(group_info, date):
     return dict(
-        title="✦ New Group Scraped ✦",
+        title="Click Here Claimable Group!",
         url=f"https://www.roblox.com/groups/{group_info['id']}",
         fields=[
             dict(name="Group ID", value=group_info["id"]),
@@ -75,7 +75,7 @@ def make_embed(group_info, date):
             dict(name="Group Members", value=group_info["memberCount"])
         ],
         footer=dict(
-            text="VXXP Finder | dsc.gg/vxxp"
+            text="Isha Finder | Isha#2000"
         ),
         timestamp=date.isoformat()
     )
